@@ -1,0 +1,41 @@
+canvas {     
+    border: 1px solid black;
+    border-radius: 0px;
+    transform-origin: top left;
+    background-color: whitesmoke;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    max-width:200px;
+    height: 10px;
+    border-radius: 5px;  
+    background: #a5a4a4;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin:5%;
+    margin-left: 20%;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    background: #0423aa;
+    cursor: pointer;
+  }
+.btn{
+    margin-left:23%;
+}
+button{
+    background-color: crimson;
+}
+body{
+    background:url(./background.png);
+    color:rgb(29, 10, 10);
+    margin-top:30px;
+}

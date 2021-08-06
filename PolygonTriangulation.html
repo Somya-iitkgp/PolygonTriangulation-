@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Triangulation Visualizer</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="PolygonTriangulation.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://vectorjs.org/library.css"> -->
+    </head>
+    <body>
+        <div class="container">
+            <h1>
+                Polygon Triangulation
+            </h1>
+            <br/>
+            <h5>
+                The Ear Clipping algorithm used in this application can tesselate concave polygons.
+                <br/>
+                Draw your own polygon and see in depth working of Ear clipping algorithm.
+            </h5>
+            <br/>
+            <div class="container">
+                <div class="row canva">
+                    <div class="col-8">
+                        <canvas id='canvas' width="700" height="450"></canvas>
+                    </div>
+                    <div class="col align-items-center">
+                        <br/>
+                        <br/>
+                        <br/>
+                        <h5>
+                            Note-
+                        </h5>
+                        <h6>
+                            <ul>
+                                <li>Draw the points in anticlockwise order.
+                                </li>
+                                <li>Green Color point indicates vertex has been clipped.
+                                </li>
+                                <li>Yellow color point indicates this triangle is being clipped.
+                                </li>
+                                <li>Blue color point indicates the vertices of current polygon.
+                                </li>
+                            </ul>
+                        </h6>
+                        <h5>
+                            Speed of Triangulation-
+                        </h5>                
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        <br/>
+                        <div class="btn">
+                            <button type="button" class="btn btn-secondary">Triangulate!!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="PolygonTriangulation.js"></script>
+    </body>
+</html>
