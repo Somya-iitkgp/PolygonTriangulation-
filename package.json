@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "PolygonTriangulation.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ember server"
+    "start": "ember serve --port=${PORT}",
+    "build": "ember build",
+    "test": "ember test",
+    "postinstall": "bower install"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,10 @@
   "keywords": [],
   "description": "",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "bower": "1.3.12"
+  },
+  "devDependencies": {
+    "ember-cli": "0.1.15"
   }
 }
