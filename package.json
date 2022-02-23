@@ -1,7 +1,6 @@
 {
   "name": "polygontriangulation",
   "version": "1.0.0",
-  "description": "",
   "main": "PolygonTriangulation.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Somya-iitkgp/PolygonTriangulation-/issues"
   },
-  "homepage": "https://github.com/Somya-iitkgp/PolygonTriangulation-#readme"
+  "homepage": "https://github.com/Somya-iitkgp/PolygonTriangulation-#readme",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
